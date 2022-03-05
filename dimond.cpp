@@ -4,27 +4,27 @@ int main()
 {
     int n;
     cin>>n;
-    for(int i=1 ;i<=n;i++)
+    for(int i = 0; i<=n; i++)
     {
-        for(int j=1; j<=2*i; j++)
+        for (int j=0; j<i; j++)
         {
-            if(j <= 2*n-2*i)
-            {cout<<" ";}
+            if (j>=n-i)
+            {cout<<"*";  }
             else
-            {cout<<"*";}
+            {cout<<" ";}
         }
         cout<<endl;
     }
-    for(int i=n ;i>=1;i--)
+    for(int i = 0; i<n; i++)
     {
-        for(int j=1; j<=2*i; j++)
+        for (int j=n; j>i; j--)
         {
-            if(j <= 2*n-2*i)
-            {cout<<" ";}
+            if (j<=n-i)
+            {cout<<"*";  }
             else
-            {cout<<"*";}
+            {cout<<" ";}
         }
         cout<<endl;
-    }
-
+    }      
+ 
 }
