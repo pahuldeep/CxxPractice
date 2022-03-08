@@ -1,15 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int start,end,temp, n;
-    cin>>n;
-    for(int i = 0; i <= sizeof(n-1); i++){
-        start = end;
-        end = temp;
-        temp = start;
-        start+=1;
-        end-=1;  
-        cout<<start[i];      
+    int nInput;
+    cin>>nInput;
+    int result = 0;
+    while(nInput>0)
+    {
+        result = result*10 + nInput%10;
+        nInput = nInput/10;
     }
-    cout<<endl;
+    cout<<result<<endl;
 }
