@@ -1,2 +1,2 @@
-# C-Practice-DS 
-- new file for ds practice 
+# C++ Practice  
+- new file for data structure and algorithms and basics
