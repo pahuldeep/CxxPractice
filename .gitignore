@@ -34,8 +34,8 @@
 
 **./build
 **/build
-**./.vscode
-**/.vscode
+*./.vscode
+*/.vscode
 
 .vscode/*
 !.vscode/settings.json
