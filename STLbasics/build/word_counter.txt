@@ -1,0 +1,7 @@
+One of the fundamental challenges of business process automation, in general, is how to 
+efficiently extract data from semi-structured or unstructured sources, such as PDF files, and use 
+that data to automatically perform data entry on other systems, with little or no need for human 
+intervention. 
+This is what we are going to explore in this chapter. We are going to create a Python script that 
+can read PDF form documents, extract specific data from them, and automatically fill in the 
+same data on a web-based system. 
