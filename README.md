@@ -1,19 +1,4 @@
 # C++ Practice  
-Content Type of Algorithms
-
-    Data Structure
-    Sorting and Searching
-    Graph Algorithms
-    Designing Algorithms
-    Data Algorithms
-    NLP Algorithms
-    Large Scale Algorithms
-    Cryptography
-    Traditional Supervised Learning
-    Unsupervised ML Algorithms
-    Neural Network
-    Advanced Deep Learning
-    Recommendation Engines
 
 Phases of Algorithm Development
 Input -> Algorithm -> Output
@@ -59,6 +44,22 @@ Development Environment and Tools
     Development Environment: 
     Packages: 
     Performance Analysis: 
+
+Content Type of Algorithms
+
+    Data Structure
+    Sorting and Searching
+    Graph Algorithms
+    Designing Algorithms
+    Data Algorithms
+    NLP Algorithms
+    Large Scale Algorithms
+    Cryptography
+    Traditional Supervised Learning
+    Unsupervised ML Algorithms
+    Neural Network
+    Advanced Deep Learning
+    Recommendation Engines
 
 Getting Started
 
