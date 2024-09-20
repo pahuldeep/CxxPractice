@@ -3,17 +3,17 @@ Content Type of Algorithms
 
     Data Structure
     Sorting and Searching
-    Designing Algorithms
     Graph Algorithms
-    Unsupervised ML Algorithms
+    Designing Algorithms
+    Data Algorithms
+    NLP Algorithms
+    Large Scale Algorithms
+    Cryptography
     Traditional Supervised Learning
+    Unsupervised ML Algorithms
     Neural Network
     Advanced Deep Learning
-    NLP Algorithms
     Recommendation Engines
-    Data Algorithms
-    Cryptography
-    Large Scale Algorithms
 
 Phases of Algorithm Development
 Input -> Algorithm -> Output

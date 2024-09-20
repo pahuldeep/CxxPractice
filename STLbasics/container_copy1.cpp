@@ -1,5 +1,11 @@
-#include <bits/stdc++.h>
-#include <tuple>
+#include<iostream>
+#include<string>
+#include<tuple>
+#include<vector>
+
+#include<algorithm>
+#include<map>
+#include<iterator>
 
 using namespace std;
 

@@ -4,7 +4,7 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: g++.exe build active file",
-			"command": "C:/LIBRARY/Mingw/bin/g++.exe",
+			"command": "C:\\Qt\\Tools\\llvm-mingw1706_64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
@@ -13,7 +13,7 @@
 				"${fileDirname}\\build\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
-				"cwd": "C:/LIBRARY/Mingw/bin"
+				"cwd": "${fileDirname}"
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -22,7 +22,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: C:/LIBRARY/Mingw/bin/g++.exe"
+			"detail": "compiler: C:\\Qt\\Tools\\llvm-mingw1706_64\\bin\\g++.exe"
 		}
 	]
 }

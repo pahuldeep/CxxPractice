@@ -21,9 +21,6 @@ int main()
     v.erase(remove_if(begin(v), end(v), isOdd), end(v));
     v.shrink_to_fit();
 
-
-
-
     for (auto i : v){ cout << i << ", "; }
     cout << "\n";
     return 0;

@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 void add_elements(std::vector<int> &vector, int N){
 
