@@ -9,9 +9,11 @@ void swapper(int &a, int &b) {
 }
 
 void bubbleSort(vector<int> &myList) {
-    int last = myList.size() - 1;
-    for (int item = last; item > 0; item--) {
+    
+    for (int item = myList.size() - 1; item > 0; item--) {
+
         bool swapped = false;
+
         for (int idx = 0; idx < item; idx++) {
             if (myList[idx] > myList[idx + 1]) {
                 swapper(myList[idx], myList[idx + 1]);
