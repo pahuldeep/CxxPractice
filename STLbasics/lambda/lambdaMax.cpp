@@ -12,9 +12,8 @@ int main(){
     cout << "Second Integer: ";
     cin >> y;
 
-    auto max = [](int x, int y) -> int { return x > y ? x: y; };
-
-    int largerNumber = max(x, y);
+    auto max = [](auto x, auto y) -> auto { return x > y ? x: y; };
+    auto largerNumber = max(x, y);
 
     cout << "The larger number is: " << largerNumber ;
 }

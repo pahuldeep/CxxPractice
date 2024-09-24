@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-
+#include <iostream>
+#include <array>
 using namespace std;
 
 template<typename T>

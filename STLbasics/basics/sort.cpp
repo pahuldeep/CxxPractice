@@ -2,7 +2,9 @@
 #include<algorithm>
 #include<array>
 
-void print(auto array){
+template<typename my_auto>
+
+void print(my_auto array){
     for(auto value: array){
         std::cout<< value << " ";
     }
@@ -10,7 +12,7 @@ void print(auto array){
 }
 
 int main(){
-    std::array<int, 5> my_array = {12, 31, 44, 1, 2,};
+    std::array<int, 5> my_array = {12, 31, 44, 1, 2};
     print(my_array);
 
     std::sort(my_array.begin(), my_array.end());
