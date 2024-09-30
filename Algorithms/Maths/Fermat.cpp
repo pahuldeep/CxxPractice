@@ -12,7 +12,7 @@ ll power(ll a, ll b, ll m){
     return res;
 }
 ll inverse(ll a, ll b){
-    power(a,b-2,b);
+    power(a, b-2, b);
 }
 
 int main(){

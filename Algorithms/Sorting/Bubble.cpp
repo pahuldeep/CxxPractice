@@ -2,11 +2,7 @@
 #include <vector>
 using namespace std;
 
-void swapper(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
+void swapper(int &a, int &b) { int temp = a; a = b; b = temp; }
 
 void bubbleSort(vector<int> &myList) {
     
@@ -38,9 +34,7 @@ int main() {
     bubbleSort(myList);
 
     cout << "Sorted array: ";
-    for (auto i : myList) {
-        cout << i << " ";
-    }
+    for (auto i : myList) { cout << i << " "; }
     cout << endl;
 
     return 0;
