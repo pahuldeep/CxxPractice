@@ -1,6 +1,8 @@
 # Local Visual Studio Code folder
-.vscode
 .vscode/
+Algorithms/.vscode
+Pattern/.vscode
+STLbasics/.vscode
 
 # Local History for Visual Studio Code
 .history/
