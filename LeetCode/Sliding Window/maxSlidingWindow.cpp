@@ -1,10 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <deque>
+
 using namespace std;
 
 
 vector<int> maxSlidingWindow(vector<int>& nums, int k) {
     int n = nums.size();
     vector<int> result;
+
     deque<int> window; // Store indices of elements in the sliding window
 
     for (int i = 0; i < n; ++i) {

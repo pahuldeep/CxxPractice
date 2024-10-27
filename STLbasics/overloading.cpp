@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include <array>
 
 void print(std::array<int, 3> array){
     for(auto i: array){

@@ -4,12 +4,14 @@
 using namespace std;
 
 string minWindow(string s, string t) {
+
     if (s.empty() || t.empty()) {
         return "";
     }
 
     unordered_map<char, int> tFreq, sFreq;
     string result = "";
+    
     int left = 0, right = -1;
     int finalLeft = -1, finalRight = -1;
     int minW = s.length() + 1;

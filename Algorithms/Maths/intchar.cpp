@@ -15,8 +15,7 @@ string char_to(string a){
 }
 int main()
 {
-    string a,b;
-    string res;
+    string a, b;
     cin >> a >> b ;
     cout << " Value of strings : " << a + b << endl;
     cout << " Value of int : "<< char_to(a) + char_to(b) << endl;
