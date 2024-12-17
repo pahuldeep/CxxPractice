@@ -52,11 +52,16 @@ public:
 int main(){
     singleList list;
 
+    list.insertFront(1);
+    list.insertFront(2);
     list.insertFront(3);
+    list.insertFront(4);
+    list.display();
 
     list.insertEnd(1);
     list.insertEnd(2);
-
+    list.insertEnd(3);
+    list.insertEnd(4);
     list.display();
 
 }
