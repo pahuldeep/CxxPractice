@@ -19,20 +19,6 @@ public:
         head = new_node;
     }
 
-    void insertBack(int value){
-        Node *new_node = new Node(value);
-        if(head == nullptr){
-            head = new_node;
-        }
-        else{        
-            Node *current = head;
-            while(current->next != nullptr){
-                current = current->next;
-            }
-            current->next = new_node;
-        }
-    }
-
     void display(){
         Node *node = head;
         while(node != nullptr){

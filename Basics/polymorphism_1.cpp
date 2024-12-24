@@ -2,7 +2,7 @@
 @brief there are 4 types:
     inclusion   > generic methods (pure)                (dynamic)
     parameteric > generic methods with type deduction   (static)
-    overriding  > changes behaviour [base, child, ....]
+    overriding  > changes behaviour                     (base, child, ....)
     overloading > same name in different methods
     
 @return dynamic polymorphism */

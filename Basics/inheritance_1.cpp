@@ -1,10 +1,9 @@
 /*  
-@brief Inheritance:
-@details Inheritance demonstrated by Eucidean_Distance inheriting from Distance and implementing the abstract method.
+@brief - Inheritance
+@details - demonstrated by Eucidean Distance inheriting from Distance and implementing the abstract method.
 
 @example 
 Abstraction is used through the pure virtual function in the Distance class.
-
 */
 
 #include <iostream>
@@ -36,11 +35,16 @@ public:
         if (x.size() != y.size()) return -1.0;
 
         double d_sum = 0.0;
-        for (auto i = 0; i < x.size(); ++i)
-        {
-            d_sum += (x[i] - y[i]) * (x[i] - y[i]);
+        
+        // for (auto i = 0; i < x.size(); ++i)        {
+        //     d_sum += (x[i] - y[i]) * (x[i] - y[i]); // simple formula
+        // } 
+        // return sqrt(d_sum);
+
+        for(auto i = 0.0; i < x.size(); ++i){
+            d_sum += hypot(x[i] - y[i], 0.0);    // hypotenuse formula (precise)
         }
-        return sqrt(d_sum);
+        return d_sum;
     }
 };
 
@@ -49,7 +53,7 @@ class Manhattan_Distance : public Distance
 public:
     Manhattan_Distance() : Distance("Manhattan distance") {}
 
-    double operator()(const vector<double> &x, const vector<double> &y) const
+    double operator()(const vector<double> &x, const vector<double> &y) const override
     {
         if (x.size() != y.size()) return -1.0;
 
