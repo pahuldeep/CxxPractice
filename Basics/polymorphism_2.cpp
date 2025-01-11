@@ -1,26 +1,4 @@
-/* Static polymorphism allows the compiler to resolve method calls at compile time
-
-@brief:
-- Base Class: Container
-A generic class that works with any data type T.(basically templates)
-It provides methods to add and remove items, encapsulate data, and get the size of the container.
-
-- Derived Classes: Cluster and Partition
-cluster is a container of size_t elements (essentially integers).
-Partition is a container of cluster objects.
-
-@Methods:
-
-add_item(const T& item): Adds an item to the container.
-
-remove_item(const T& item): Removes an item from the container if it exists.
-
-data() const: Returns a reference to the vector of items.
-
-size() const: Returns the size of the container. 
-
-
-*/
+/* Static polymorphism allows the compiler to resolve method calls at compile time */
 
 #include <iostream>
 #include <vector>
@@ -29,26 +7,26 @@ using namespace std;
 
 template<typename T>
 
-class Container{
-protected:
-    Container(){}
-    vector<T> _items;
-
+class Container {
 public:
+    auto size() const{ return _items.size(); }      // get item size
+    
     const vector<T> &data() const{ return _items; } // encapsulate item
-    size_t size() const{ return _items.size(); } // get item size
-
+    
     void add_item(const T& item){
         _items.push_back(item);
     }
-
     void remove_item(const T& item){
         typename vector<T>::iterator it = find(_items.begin(), _items.end(), item);
         if(it != _items.end()){ _items.erase(it); } 
     }
+
+protected:
+    Container(){}
+    vector<T> _items;
 };
 
-class cluster: public Container<size_t>{};
+class cluster:   public Container<size_t>{};
 class Partition: public Container<cluster>{};
 
 int main(){

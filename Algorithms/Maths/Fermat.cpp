@@ -1,23 +1,27 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-typedef long long ll;
-ll power(ll a, ll b, ll m){
-    int res = 1;
-    while (b>0)
-    {
-        if(b&1 == 0){res = (res*a)% m;}
-        a = a*a % m;
-        b>>=1;
+
+typedef long long int ll;
+
+ll modularExponentiation(ll base, ll exponent, ll modulus) {
+    ll result = 1;
+    while (exponent > 0) {
+        if (exponent & 1) {
+            result = (result * base) % modulus;
+        }
+        base = (base * base) % modulus;
+        exponent >>= 1;
     }
-    return res;
-}
-ll inverse(ll a, ll b){
-    power(a, b-2, b);
+    return result;
 }
 
-int main(){
-    int a,b;
-    cin >> a >> b;
-    cout << power(a,b,1000000007) << endl;
-    cout << inverse(a,b) << endl;
+ll modularInverse(ll number, ll modulus) {
+    return modularExponentiation(number, modulus - 2, modulus);
+}
+
+int main() {
+    int base, exponent;
+    cin >> base >> exponent;
+    cout << modularExponentiation(base, exponent, 1000000007) << endl;
+    cout << modularInverse(base, 1000000007) << endl;
 }

@@ -12,24 +12,18 @@ int main()
     cin >> n;
     for (int i = 1; i < n; i++)
     {
-
         int j = 1;
-        while (j < n - i)
-        {
+        while (j < n - i){
             cout << " ";
             j++;
         }
-
         int k = i;
-        while (k > 1)
-        {
-            cout << (i-k)+1;
+        while (k > 1){
+            cout << (i-k) + 1;
             k--;
         }
-
-        while (k <= i)
-        {
-            cout << (i-k)+1;
+        while (k <= i){
+            cout << (i-k) + 1;
             k++;
         }
         cout << endl;

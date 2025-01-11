@@ -81,7 +81,6 @@ int main()
     list.insertFront(5);
 
     list.display();
-    list.reverse();
 
     list.findMid();
     list.display();

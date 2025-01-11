@@ -28,8 +28,8 @@ public:
         cout << "\n";
     }
 
-    // rotate by k position
-    void rotate(int k){
+    // move by k position
+    void move(int k){
         if(head == nullptr || k == 0) return;
 
         // find length
@@ -76,6 +76,14 @@ public:
         head = before;
     }
 
+    void reverse_mini() {
+        for ( Node *current = head, *previous = nullptr; current != nullptr; previous = head ){
+            head = current;
+            current = current->next; 
+            head->next = previous;
+        }
+    }
+
     Node* reverse(Node *head){
         Node *current = head;
         Node *after = nullptr;
@@ -89,6 +97,8 @@ public:
         }
         return before;
     }
+
+
 
     // reverse alternatively
     void reverse_alter(){
@@ -132,7 +142,6 @@ int main(){
     list.insertfront(4);
     list.insertfront(5);
     list.insertfront(6);
-
     list.display();
 
     list.reverse();
@@ -142,6 +151,9 @@ int main(){
     list.display();
 
     
-    list.rotate(1);
+    list.move(3);
+    list.display();
+
+    list.reverse_mini();
     list.display();
 }
