@@ -54,7 +54,6 @@ int main(){
     slist.transfer_from(list);
 
     slist.display();
-
     slist.insert_front("new comer");
     slist.display();
 

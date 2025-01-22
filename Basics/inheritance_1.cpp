@@ -1,10 +1,13 @@
-/*  
-@brief - Inheritance
-@details - demonstrated by Eucidean Distance inheriting from Distance and implementing the abstract method.
-
-@example 
-Abstraction is used through the pure virtual function in the Distance class.
-*/
+/**  
+ * @brief Inheritance
+ * 
+ * 
+ * @details demonstrated by Eucidean Distance inheriting from Distance and implementing the abstract method.
+ * 
+ * 
+ * @example Abstraction is used through the pure virtual function in the Distance class.
+ * 
+ **/
 
 #include <iostream>
 #include <vector>
@@ -22,7 +25,7 @@ public:
     ~Distance() {}
 
     virtual double operator()(const vector<double> &x, const vector<double> &y) const = 0; /* pure virtual function operator() */
-    const string &name() { return _name; } /* abstraction [ _name ] or encapsulation */
+    const string &name() { return _name; }                                                 /* abstraction [ _name ] or encapsulation */
 };
 
 class Eucidean_Distance : public Distance

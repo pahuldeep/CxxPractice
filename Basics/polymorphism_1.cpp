@@ -1,11 +1,11 @@
-/* 
-@brief there are 4 types:
-    inclusion   > generic methods (pure)                (dynamic)
-    parameteric > generic methods with type deduction   (static)
-    overriding  > changes behaviour                     (base, child, ....)
-    overloading > same name in different methods
-    
-@return dynamic polymorphism */
+/**
+ * @brief This code illustrates four types of generic programming:
+ * 1. **Inclusion**: Generic methods that operate on any data type (dynamic).
+ * 2. **Parametric**: Generic methods with type deduction (static).
+ * 3. **Overriding**: Changing method behavior in derived classes (base and child).
+ * 4. **Overloading**: Multiple methods with the same name but different parameters.
+ */
+
 
 #include <iostream>
 #include <vector>
@@ -30,6 +30,12 @@ class kmode: public Algorithm{
     }
 };
 
+class kmedian: public Algorithm{
+    void cluster(){
+        cout << "cluster by k-median" << endl;
+    }
+};
+
 class dataMiner{
 public:
     void cluster(Algorithm *pa){
@@ -37,10 +43,13 @@ public:
     }
 };
 
-int main(){
+int main()
+{
     vector<Algorithm*> algo;
+    
     algo.push_back(new kmean());
     algo.push_back(new kmode());
+    algo.push_back(new kmedian());
     algo.push_back(new kmode());
     algo.push_back(new kmean());
 

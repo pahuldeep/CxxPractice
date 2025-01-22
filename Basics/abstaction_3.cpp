@@ -1,24 +1,21 @@
-/* Practice Question: Zero-Cost Abstractions in C++
-
-@Task:
-
-1. Create a base class `GameObject` with a pure virtual function `render()`.
-2. Implement at least two derived classes (e.g., `Player` and `Enemy`) that inherit from `GameObject` and implement the `render()` function.
-
-here i didn't able to create gameEngine properly... therefore i have learned this and then...
-3. Create a `GameEngine` class that stores a collection of `GameObject` pointers and has a method to render all objects.
-4. Demonstrate how you would use these classes to create and render multiple game objects.
-5. Explain how this implementation leverages zero-cost abstractions in C++.
-
-@Bonus:
-modify this design to include different rendering strategies (e.g., 2D sprites, 3D models) 
-without losing the benefits of zero-cost abstractions?
-
-Remember to consider:
-- How virtual functions are implemented in C++
-- The role of the compiler in optimizing abstract code
-- How this design allows for flexibility without sacrificing performance
-*/
+/** Practice Question: Zero-Cost Abstractions in C++
+ * 
+ * @Task
+ * 1. Create a base class `GameObject` with a pure virtual function `render()`.
+ * 2. Implement at least two derived classes (e.g., `Player` and `Enemy`) that inherit from `GameObject` and implement the `render()` function.
+ * 3. Create a `GameEngine` class that stores a collection of `GameObject` pointers and has a method to render all objects.
+ * 4. Demonstrate how you would use these classes to create and render multiple game objects.
+ * 5. Explain how this implementation leverages zero-cost abstractions in C++.
+ * 
+ * @Bonus
+ * modify this design to include different rendering strategies (e.g., 2D sprites, 3D models) 
+ * without losing the benefits of zero-cost abstractions?
+ * 
+ * @Remember to consider:
+ * - How virtual functions are implemented in C++
+ * - The role of the compiler in optimizing abstract code
+ * - How this design allows for flexibility without sacrificing performance
+ */ 
 
 #include <iostream>
 #include <vector>
